@@ -1,0 +1,201 @@
+:root {
+    --primaryColor: #ff984b;
+}
+
+@font-face {
+    font-family:'Arial';
+    src: url('fonts/ARIAL.TTF') format("opentype");
+    font-weight: 400;
+}
+ @font-face {
+        font-family:'Arial';
+        src: url('fonts/ArialCEMTBlack.ttf') format("opentype");
+        font-weight: 400;
+    }
+@font-face {
+    font-family: 'Myriad';
+    src: url('fonts/MYRIADPRO-REGULAR.OTF') format("opentype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'brush';
+    src: url('fonts/BRUSHSCI.ttf') format("opentype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'brush';
+    src: url('fonts/brush\ script\ mt\ kursiv.ttf') format("opentype");
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    width: 100vw;
+}
+
+.app header {
+    width: 100%;
+    height: 100vh;
+    background: no-repeat center center/cover url("img/full_image_1.jpg");
+}
+
+
+.app header .topBar {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 10px 3px rgb(10, 10, 10, 0.2);
+    position:fixed;
+}
+
+.app header .topBar.logoContainer{
+    background: url("imh/logo.png");
+      
+}
+
+.app header .topBar.logoContainer{
+    width: 100%;
+    height: auto;
+    padding: 100px 88px;
+}
+
+.app header .topBar .navBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app header .topBar .navBar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial;
+}
+
+.app header .topBar .navBar ul li {
+    list-style: none;
+    padding: 8px;
+}
+
+.app header .topBar .navBar ul a {
+    text-decoration: none;
+    color: var(--primaryColor);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.app header .topBar .navBar ul a:hover{
+    color:#000 ;
+}
+
+.app header .topBar .navBar .socialContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app header .topBar .navBar .socialContainer .social-logoContainer {
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+}
+.app header .topBar .navBar .socialContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.app .footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.app .footer .left-part{
+    width: 30%;
+    background: #000;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.app .footer .left-part .mot-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    font-family: 'myriad';
+    letter-spacing: 1rem;
+    line-height: 2.5rem;
+}
+
+.app .footer .left-part .mot-container i{
+    font-size: 10px;
+    color: #ff984b;
+}
+
+.app .footer .left-part .mot-container span {
+    color: #ff984b;
+}
+.app .footer .right-part{
+    width: 70%;
+    background:#696969;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+form{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.button{
+    text-align: center;
+    color: white;
+    background-color: #ff984b;
+    width: 100px;
+    height: 20px;
+    text-decoration: none;
+    align-self: flex-end;
+}
+
+.app .footer .right-part form .content{
+   display: flex;
+   width: 100%;
+   margin: 0 auto;
+   justify-content: space-around;
+   margin-bottom: 25px;
+}
+
+.app .footer .right-part form .content .group{
+    display: flex;
+    flex-direction: column;
+    width: 20px;
+}
+
+.app .footer .right-part form .content .group .child{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
